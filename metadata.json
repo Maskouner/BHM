@@ -1,0 +1,9 @@
+{
+  "id": "BlackHoleuhMod",
+  "name": "Black Holeuh Mod",
+  "author": ["Maskouner"],
+  "description": "Maskouner se remet au code pour le balala multi du midi (c'est beau)",
+  "prefix": "BHM",
+  "main_file": "main.lua",
+  "version": "0.0.0"
+}
