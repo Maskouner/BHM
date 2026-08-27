@@ -36,6 +36,22 @@ return {
                         'fin de la manche'
                     }
                 }
+             },
+              j_BHM_joker4 = {
+                name = 'Joker 4',
+                text = {
+                    {
+                        'Tant que vous possedez ce joker tout les boosters pack coutent {C:money}0 ${}'
+                    }
+                }
+             },
+              j_BHM_joker5 = {
+                name = 'Joker 5',
+                text = {
+                    {
+                        'Tant que vous possedez ce joker tout les prix du magasin sont réduit de moitié'
+                    }
+                }
              }
         }
     }
