@@ -53,6 +53,43 @@ return {
                     }
                 }
              }
+        },
+        Tarot = {
+            c_BHM_consumable1 = {
+                name = 'Consumable 1',
+                text = {
+                    'Octroie {C:money}$#1#'
+                }
+            }
+        },
+        BHM_supertarot = {
+            c_BHM_consumable2 = {
+                name = 'Consumable 2',
+                text = {
+                    'Octroie {C:money}$#1#{} pour',
+                    'Chaque {c:blue}main jouée'
+                }
+            }
+        },
+        Other = {
+            undiscovered_BHM_supertarot = {
+                name = 'A trouver Super Tarot',
+                text = {
+                    "Purchase or use",
+                    "this card in an",
+                    "unseeded run to",
+                    "learn what it does",
+                }
+            }
+        }
+    },
+    misc = {
+        dictionary = {
+            b_BHM_supertarot_cards = 'Exemple de Super Tarot',
+            k_BHM_supertarot = 'Exemple de Super Tarot',
+        },
+        labels = {
+            BHM_supertarot = 'Super Tarot'
         }
     }
 }
