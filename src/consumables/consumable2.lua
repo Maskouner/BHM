@@ -1,5 +1,5 @@
 SMODS.ConsumableType {
-    key = 'BHM_supertarot',
+    key = 'supertarot',
     primary_colour = HEX('7732a8'),
     secondary_colour = HEX('1ef7f0'),
     default = 'c_BHM_consumable2',
@@ -24,10 +24,11 @@ SMODS.Consumable {
         }
     },
     discovered = true,
-    set = 'BHM_supertarot',
+    set = 'supertarot',
      loc_vars = function(self, info_queue, card)
         return {
             vars = {
+                card.ability.extra.dollars,
                 card.ability.extra.dollars * G.GAME.hands_played
             }
         }

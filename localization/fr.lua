@@ -62,17 +62,18 @@ return {
                 }
             }
         },
-        BHM_supertarot = {
+        supertarot = {
             c_BHM_consumable2 = {
                 name = 'Consumable 2',
                 text = {
                     'Octroie {C:money}$#1#{} pour',
-                    'Chaque {c:blue}main jouée'
+                    'Chaque {C:blue}main{} jouée',
+                    '{C:inactive}(Actuellement: {C:money}$#2#{C:inactive})'
                 }
             }
         },
         Other = {
-            undiscovered_BHM_supertarot = {
+            undiscovered_supertarot = {
                 name = 'A trouver Super Tarot',
                 text = {
                     "Purchase or use",
@@ -80,16 +81,26 @@ return {
                     "unseeded run to",
                     "learn what it does",
                 }
+            },
+            p_BHM_booster1 = {
+                name = 'Super Paquet de Tarot 1',
+                text = {
+                    'Choisis {C:attention}#1#{} parmis les',
+                    '{C:attention}#2#{C:supertarot} Super Tarot{} pour',
+                    'être utilser immediatement',
+                }
             }
         }
     },
-    misc = {
+   misc = {
         dictionary = {
-            b_BHM_supertarot_cards = 'Exemple de Super Tarot',
-            k_BHM_supertarot = 'Exemple de Super Tarot',
+            b_supertarot_cards = 'Super Tarot',
+            k_supertarot = 'Super Tarot',
+            k_superbooster = 'Super Paquet (Tarot)'
         },
         labels = {
-            BHM_supertarot = 'Super Tarot'
+            supertarot = 'Super Tarot 3'
         }
     }
+    
 }
