@@ -1,5 +1,19 @@
 return {
     descriptions =  {
+        Back = {
+            b_BHM_back1 = {
+                name = 'Deck 1',
+                text = {
+                    '{C:attention}+#1#{} emplacements de joker',
+                }
+            },
+             b_BHM_back2 = {
+                name = 'Deck 2',
+                text = {
+                    '{C:money}+#1#{} Placeholer',
+                }
+            }
+        },
         Joker = {
             j_BHM_joker1 = {
                 name = 'Joker 1',
