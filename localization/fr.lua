@@ -10,7 +10,10 @@ return {
              b_BHM_back2 = {
                 name = 'Deck 2',
                 text = {
-                    '{C:money}+#1#{} Placeholer',
+                    'Gagne {C:money}1${}',
+                    'a la fin la premiére manche',
+                    'Cette valeur est doublé ',
+                    'a la fin de chaque manche'
                 }
             }
         },
