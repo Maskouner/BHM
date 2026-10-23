@@ -5,38 +5,22 @@ SMODS.Back{
         x = 4,
         y = 2
     },
-    config = {argent = 0 , increase = 2 },
+    config = { increase = 2 },
     discovered = true,
-    loc_vars = function (self, info_queue, card)
+    loc_vars = function(self, info_queue, card)
         return {
             vars = {
-                
+                self.config.increase
             }
         }
     end,
-    calculate = function (self, back, context)
-        if context.end_of_round and context.game_over == false and context.main_eval and self.config.argent ~= 0  then
-            print("Entrer dans la fonction de scaling")
-            print("Variable argent : " .. self.config.argent)
-            self.config.argent = self.config.argent * self.config.increase
-            return {
-                message = 'Le test',
-                colour = G.C.MONEY,
-                print("Variable argent : " .. self.config.argent)
-            }
-        end
-         if context.end_of_round and context.game_over == false and context.main_eval and self.config.argent == 0  then
-            print("Entrer dans la fonction pour la premiere manche")
-            print("Variable argent : " .. self.config.argent)
-            self.config.argent =  1
-            return {
-                message = 'Le test 2',
-                colour = G.C.MONEY,
-                print("Variable argent : " .. self.config.argent)
-            }
-        end
-    end,
-    calc_dollar_bonus = function (self, back)
-        return self.config.argent
+    calc_dollar_bonus = function(self, back)
+        -- Récupère le numéro de la manche actuelle (par défaut 1)
+        local current_round = G.GAME and G.GAME.round or 1
+        
+        -- Formule exponentielle : 1 $ au round 1, 2 $ au round 2, 4 $ au round 3, etc.
+        local bonus = math.floor(1 * math.pow(self.config.increase, current_round - 1))
+        
+        return bonus
     end
 }
