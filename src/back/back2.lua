@@ -6,6 +6,7 @@ SMODS.Back{
         y = 2
     },
     config = { increase = 2, argent = 1 },
+    unlocked = true,
     discovered = true,
     loc_vars = function(self, info_queue, card)
         return {
@@ -18,7 +19,7 @@ SMODS.Back{
         -- Récupère le numéro de la manche actuelle (par défaut 1)
         local current_round = G.GAME and G.GAME.round or 1
 
-        -- si on est au premier round donne 1$ sinon double la valeur de argent et la donne au joueur
+        -- Si on est au premier round donne 1$ sinon double la valeur de argent et la donne au joueur
         if current_round == 1 then
             return 1
         else

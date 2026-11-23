@@ -2,18 +2,27 @@ return {
     descriptions =  {
         Back = {
             b_BHM_back1 = {
-                name = 'Deck 1',
+                name = 'Jeu scale joker',
                 text = {
-                    '{C:attention}+#1#{} emplacements de joker',
+                    '{C:red}#1#{} emplacements de joker',
+                    'Quand une blinde boss est vaincu :',
+                    '{C:attention}+1{} emplacement de joker'
                 }
             },
              b_BHM_back2 = {
-                name = 'Deck 2',
+                name = 'Jeu scale argent',
                 text = {
                     'Gagne {C:money}1${}',
                     'a la fin la premiére manche',
                     'Cette valeur est doublé ',
                     'a la fin de chaque manche'
+                }
+            },
+             b_BHM_back3 = {
+                name = 'Jeu seed broken',
+                text = {
+                    'Chaque carte du jeu a une {C:dark_edition}édition{},',
+                    '{C:purple}sceau{} et {C:enhanced}amélioration{} aléatoires'
                 }
             }
         },
