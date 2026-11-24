@@ -24,6 +24,15 @@ return {
                     'Chaque carte du jeu a une {C:dark_edition}édition{},',
                     '{C:purple}sceau{} et {C:enhanced}amélioration{} aléatoires'
                 }
+            },
+             b_BHM_back4 = {
+                name = 'Jeu centre commercial',
+                text = {
+                    'Le magasin a désormais :',
+                    '{C:attention}+3{} emplacement de carte',
+                    '{C:attention}+3{} emplacement de booster',
+                    '{C:attention}+3{} emplacement de coupon'
+                }
             }
         },
         Joker = {

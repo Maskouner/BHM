@@ -22,7 +22,7 @@ SMODS.Back {
                                 nil,
                                 nil,
                                 {
-                                    message = "+ 1 mplacement de Joker",
+                                    message = "+ 1 emplacement de Joker",
                                     colour = G.C.DARK_EDITION
                                 }
                             )
